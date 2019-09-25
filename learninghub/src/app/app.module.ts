@@ -7,6 +7,12 @@ import { HomeComponent } from './shared/home/home.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { IndexComponent } from './shared/index/index.component';
 import { AboutusComponent } from './shared/aboutus/aboutus.component';
+import { UsersigninComponent } from './user/usersignin/usersignin.component';
+import { UsersignupComponent } from './user/usersignup/usersignup.component';
+import { UserpageComponent } from './user/userpage/userpage.component';
+import { TrainersigninComponent } from './trainer/trainersignin/trainersignin.component';
+import { TrainersignupComponent } from './trainer/trainersignup/trainersignup.component';
+import { TrainerpageComponent } from './trainer/trainerpage/trainerpage.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +20,13 @@ import { AboutusComponent } from './shared/aboutus/aboutus.component';
     HomeComponent,
     NavbarComponent,
     IndexComponent,
-    AboutusComponent
+    AboutusComponent,
+    UsersigninComponent,
+    UsersignupComponent,
+    UserpageComponent,
+    TrainersigninComponent,
+    TrainersignupComponent,
+    TrainerpageComponent
   ],
   imports: [
     BrowserModule,
