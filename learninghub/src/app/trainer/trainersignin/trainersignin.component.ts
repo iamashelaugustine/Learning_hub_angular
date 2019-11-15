@@ -36,7 +36,7 @@ this.http.post("https://localhost:44335/api/account/login", loginform,
         //localStorage.setItem('amars_data', JSON.stringify({ name: 'R. Amaranathan', place: 'Valasai', mailid: 'amar@hotmail.com' }));
         if(result == 'Invalid Trainer'){
           this.error_message = "Invalid trainer"
-        } else if (result == "Trainer blocked"){
+        } else if (result == "User blocked"){
           alert("You are blocked by the Admin !")
         } 
         else {// we will get the JWT token from REST API / Server then we have to store in the Frontend

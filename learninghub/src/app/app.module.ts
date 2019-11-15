@@ -28,6 +28,7 @@ import { UsercompletedComponent } from './user/usercompleted/usercompleted.compo
 import { UsercurrentComponent } from './user/usercurrent/usercurrent.component';
 import { TrainercurrentComponent } from './trainer/trainercurrent/trainercurrent.component';
 import { TrainereditComponent } from './trainer/traineredit/traineredit.component';
+import { AddtechnologyComponent } from './admin/addtechnology/addtechnology.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +47,7 @@ import { TrainereditComponent } from './trainer/traineredit/traineredit.componen
     adminloginComponent,
     AdminpageComponent,
     AddcourseComponent,
+    AddtechnologyComponent,
   AdminuserlistComponent,
 AdmintrainerlistComponent ,
 AdmineditComponent,

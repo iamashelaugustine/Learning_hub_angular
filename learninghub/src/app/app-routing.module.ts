@@ -23,6 +23,7 @@ import { UsercompletedComponent } from './user/usercompleted/usercompleted.compo
 import { UsercurrentComponent } from './user/usercurrent/usercurrent.component';
 import { TrainercurrentComponent } from './trainer/trainercurrent/trainercurrent.component';
 import { TrainereditComponent } from './trainer/traineredit/traineredit.component';
+import { AddtechnologyComponent } from './admin/addtechnology/addtechnology.component';
 
 
 
@@ -48,6 +49,7 @@ const routes: Routes = [
   {path:'usercompleted',component:UsercompletedComponent},
   {path:'usercurrent',component:UsercurrentComponent},
 {path:'trainercurrent',component:TrainercurrentComponent},
+{path:'addtechnology',component:AddtechnologyComponent},
 {path:'traineredit/:id',component:TrainereditComponent,pathMatch:'full'}
 
 ];

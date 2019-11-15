@@ -7,11 +7,12 @@ import { AdminuserlistComponent } from './adminuserlist/adminuserlist.component'
 import { AdmintrainerlistComponent } from './admintrainerlist/admintrainerlist.component';
 import { AdmineditComponent } from './adminedit/adminedit.component';
 import { AdminupdateComponent } from './adminupdate/adminupdate.component';
+import { AddtechnologyComponent } from './addtechnology/addtechnology.component';
 
 
 
 @NgModule({
-  declarations: [adminloginComponent, AdminpageComponent, AddcourseComponent, AdminuserlistComponent, AdmintrainerlistComponent, AdmineditComponent, AdminupdateComponent],
+  declarations: [adminloginComponent, AdminpageComponent, AddcourseComponent, AdminuserlistComponent, AdmintrainerlistComponent, AdmineditComponent, AdminupdateComponent, AddtechnologyComponent],
   imports: [
     CommonModule
   ]

@@ -40,7 +40,7 @@ export class AdminuserlistComponent implements OnInit {
 
   block_user = function(id) {
     console.log(id)
-    this.http.put("http://localhost:3000/user/block/"+id).subscribe(
+    this.http.put("https://localhost:44343/api/Admin/block/"+id).subscribe(
       (result : any[]) => {
         this.users = result;
         console.log(this.users)
@@ -57,7 +57,7 @@ export class AdminuserlistComponent implements OnInit {
 
   unblock_user = function(id) {
     console.log(id)
-    this.http.put("http://localhost:3000/user/unblock/"+id).subscribe(
+    this.http.put("https://localhost:44343/api/Admin/unblock/"+id).subscribe(
       (result : any[]) => {
         this.users = result;
         console.log(this.users)
