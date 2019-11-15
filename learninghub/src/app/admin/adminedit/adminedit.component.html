@@ -1,0 +1,33 @@
+<div class="image">
+
+<div class="form" style="text-align: center; padding-top: 5%; color: white">
+
+    <h2><strong style="color: black">Course List</strong></h2><br>
+    <div class="table-responsive" style="width: 100%;">
+      <table class="table table-striped table-bordered table-hover" style="width: 100%; color: white; background: rgba(0,0,0,0.7)">
+       
+        <tr style="color: goldenrod">
+          <th>CourseName</th>
+          <th>Date</th>
+          <th>MentorName</th>
+          <th>Delete</th>
+          <th>Update</th>
+        </tr>
+        <tr *ngFor="let course of courses">
+          <td>{{course.course_name}}</td>
+          <td>{{course.start_date}}</td>
+          <td>{{course.trainer_name}}</td>
+          <td><a (click)="delete_course(course._id)" title="Delete"><i class="fa fa-edit" style="color:red;"></i></a></td>
+          <td [routerLink]="['/adminupdate', course._id]"><a title="Update"><i class="fa fa-edit"></i></a></td>
+        </tr>
+      </table>
+      <div style="align-items: center; padding-top: 3%;">
+          <button  class="btn btn-dark form-button" routerLink="/addcourse">Add Course</button></div>
+    </div>
+  
+  
+    <div>
+      <p class="red-text">{{error_message}}</p>
+    </div>
+  </div>
+</div>

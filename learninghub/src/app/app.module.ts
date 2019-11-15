@@ -13,6 +13,21 @@ import { UserpageComponent } from './user/userpage/userpage.component';
 import { TrainersigninComponent } from './trainer/trainersignin/trainersignin.component';
 import { TrainersignupComponent } from './trainer/trainersignup/trainersignup.component';
 import { TrainerpageComponent } from './trainer/trainerpage/trainerpage.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { CoursesComponent } from './shared/courses/courses.component';
+import { adminloginComponent } from './admin/adminlogin/adminlogin.component';
+import { AdminpageComponent } from './admin/adminpage/adminpage.component';
+import { AddcourseComponent } from './admin/addcourse/addcourse.component';
+import { AdminuserlistComponent } from './admin/adminuserlist/adminuserlist.component';
+import { AdmintrainerlistComponent } from './admin/admintrainerlist/admintrainerlist.component';
+import { AdmineditComponent } from './admin/adminedit/adminedit.component';
+import { AdminupdateComponent } from './admin/adminupdate/adminupdate.component';
+import { TrainercompletedComponent } from './trainer/trainercompleted/trainercompleted.component';
+import { UsercompletedComponent } from './user/usercompleted/usercompleted.component';
+import { UsercurrentComponent } from './user/usercurrent/usercurrent.component';
+import { TrainercurrentComponent } from './trainer/trainercurrent/trainercurrent.component';
+import { TrainereditComponent } from './trainer/traineredit/traineredit.component';
 
 @NgModule({
   declarations: [
@@ -26,11 +41,25 @@ import { TrainerpageComponent } from './trainer/trainerpage/trainerpage.componen
     UserpageComponent,
     TrainersigninComponent,
     TrainersignupComponent,
-    TrainerpageComponent
-  ],
+    TrainerpageComponent,
+    CoursesComponent,
+    adminloginComponent,
+    AdminpageComponent,
+    AddcourseComponent,
+  AdminuserlistComponent,
+AdmintrainerlistComponent ,
+AdmineditComponent,
+AdminupdateComponent,
+TrainercompletedComponent,
+UsercompletedComponent,
+UsercurrentComponent,
+TrainercurrentComponent,
+TrainereditComponent
+ ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule, FormsModule, HttpClientModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
