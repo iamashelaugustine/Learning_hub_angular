@@ -8,12 +8,12 @@ import { HttpClient } from '@angular/common/http';
 })
  
 export class AdmineditComponent implements OnInit {
-  courses =[]
+ technologies =[]
   constructor(private http: HttpClient) { }
-  get_course_list = function() {
-    this.http.get("http://localhost:3000/course/").subscribe(
+  get_technology_list = function() {
+    this.http.get("https://localhost:44343/api/Admin/technologylist").subscribe(
       (result : any[]) => {
-        this.courses = result;
+        this.technologies = result;
         this.error_message = ""
       },
       (error) => {
@@ -38,7 +38,7 @@ export class AdmineditComponent implements OnInit {
     )
   }
   ngOnInit() {
-    this.get_course_list()
+    this.get_technology_list()
   }
 
 }

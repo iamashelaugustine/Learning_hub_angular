@@ -33,7 +33,7 @@ export class AddtechnologyComponent implements OnInit {
       (result) => {
         console.log(result)
         this.message = "Congratulations, technology Successfully added!";
-        this._route.navigate(['/courses'])
+        this._route.navigate(['/adminedit'])
       },
       (error) => {
         console.log(error)

@@ -3,49 +3,41 @@
       <div class="text-center">
       
       <h1 class="font-weight-light" style="padding-top: 8%">
-              UPDATE COURSE DETAILS
+              UPDATE TECHNOLOGY DETAILS
       </h1>
       </div>
       
               <div class="d-flex justify-content-center" style="padding-top: 5%">
                       <div class="card" style="height: auto">
                               <div class="card-body">
-                                      <form class="update-form" (ngSubmit)="submit_form_data()" #form1="ngForm" >
+                                      <form class="update-form" (ngSubmit)="submit_form_data(form1.value)" #form1="ngForm" >
                                               <div class="input-group form-group">
                                                       <div class="input-group-prepend">
                                                               <span class="input-group-text"><i class="fa fa-user"></i></span>
                                                       </div>
-                                                      <input type="text" class="form-control" [(ngModel)]="course_name" name="course_name" #course_name2="ngModel" required placeholder="Enter Course Name">
+                                                      <input type="text" class="form-control" [(ngModel)]="TechnologyName" name="TechnologyName" #technology_name2="ngModel" required placeholder="Enter Technology Name">
                                                       </div>
   
                                                       <div class="input-group form-group">
                                                           <div class="input-group-prepend">
                                                                   <span class="input-group-text"><i class="fa fa-user"></i></span>
                                                           </div>
-                                                          <input type="text" class="form-control" [(ngModel)]="start_date" name="start_date" #start_date2="ngModel" required placeholder="Enter Starting Date YYYY-MM-DD">
+                                                          <input type="text" class="form-control" [(ngModel)]="Commission" name="Commission" #commissione2="ngModel" required placeholder="Enter New Commission">
                                                           </div>
   
-                                                          <div class="input-group form-group">
-                                                              <div class="input-group-prepend">
-                                                                      <span class="input-group-text"><i class="fa fa-user"></i></span>
-                                                              </div>
-                                                              <input type="text" class="form-control" [(ngModel)]="trainer_name" name="trainer_name" #trainer_name2="ngModel" required placeholder="Enter Trainer Name">
-                                                              </div>
+                                                          
       
   
-                                              <span *ngIf="course_name2.invalid && course_name2.dirty">
-                                                      <small *ngIf="course_name2.errors.required" class="red-text"> Course name should not be empty</small>
+                                              <!-- <span *ngIf="technology_name2.invalid && technology_name2.dirty">
+                                                      <small *ngIf="technology_name2.errors.required" class="red-text"> Technology name should not be empty</small>
                                                   </span><br>
       
-                                                  <span *ngIf="start_date2.invalid && start_date2.dirty">
-                                                      <small *ngIf="start_date2.errors.required" class="red-text"> Starting date should not be empty</small>
-                                                  </span><br>
-                                                  <span *ngIf="trainer_name2.invalid && trainer_name2.dirty">
-                                                          <small *ngIf="trainer_name2.errors.required" class="red-text"> Trainer name should not be empty</small>
-                                                      </span>
+                                                  <span *ngIf="commission2.invalid && commission2.dirty">
+                                                      <small *ngIf="commission2.errors.required" class="red-text"> Commission should not be empty</small>
+                                                  </span><br>                                                   -->
                                                   
                                               <div class="form-group">
-                                                      <button [disabled]="!form1.form.valid" class="btn float-right btn-warning">Update Course</button>      
+                                                      <button [disabled]="!form1.form.valid" class="btn float-right btn-warning">Update Technology</button>      
                                               </div>
   
                                               
