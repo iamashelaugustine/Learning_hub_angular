@@ -20,6 +20,7 @@ export class AuthService {
 logoutUser() {
   localStorage.removeItem('token')
   localStorage.removeItem('email')
+  localStorage.removeItem('mentormail')
   this._router.navigate(['/home'])
 }
 getToken() {

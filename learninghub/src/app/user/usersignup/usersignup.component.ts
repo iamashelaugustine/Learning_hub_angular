@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { HttpHeaders } from '@angular/common/http';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-usersignup',
@@ -16,7 +17,7 @@ export class UsersignupComponent implements OnInit {
   role;
   message='';
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private router : Router) { }
 
   ngOnInit() {
   }
@@ -41,6 +42,8 @@ export class UsersignupComponent implements OnInit {
       (result) => {
         console.log(result)
         this.message = "Congratulations, You have successfully registered"
+        this.router.navigate(['trainersignin'])
+        
       },
       (error) => {
         console.log(error)

@@ -29,6 +29,9 @@ import { UsercurrentComponent } from './user/usercurrent/usercurrent.component';
 import { TrainercurrentComponent } from './trainer/trainercurrent/trainercurrent.component';
 import { TrainereditComponent } from './trainer/traineredit/traineredit.component';
 import { AddtechnologyComponent } from './admin/addtechnology/addtechnology.component';
+import { TrainertechlistComponent } from './trainer/trainertechlist/trainertechlist.component';
+import { TrainercourselistComponent } from './trainer/trainercourselist/trainercourselist.component';
+import { TraineraddcourseComponent } from './trainer/traineraddcourse/traineraddcourse.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +59,10 @@ TrainercompletedComponent,
 UsercompletedComponent,
 UsercurrentComponent,
 TrainercurrentComponent,
-TrainereditComponent
+TrainereditComponent,
+TrainertechlistComponent,
+TrainercourselistComponent,
+TraineraddcourseComponent
  ],
   imports: [
     BrowserModule,

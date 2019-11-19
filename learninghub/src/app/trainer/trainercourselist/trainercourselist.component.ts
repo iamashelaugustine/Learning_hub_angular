@@ -1,13 +1,14 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { ActivatedRoute, Router } from '@angular/router';
-import { HttpClient } from '@angular/common/http';
 
 @Component({
-  selector: 'app-trainercompleted',
-  templateUrl: './trainercompleted.component.html',
-  styleUrls: ['./trainercompleted.component.css']
+  selector: 'app-trainercourselist',
+  templateUrl: './trainercourselist.component.html',
+  styleUrls: ['./trainercourselist.component.css']
 })
-export class TrainercompletedComponent implements OnInit {
+ 
+export class TrainercourselistComponent implements OnInit {
 
   constructor(private route: ActivatedRoute, private http: HttpClient,
     private router: Router) { }
@@ -45,7 +46,7 @@ export class TrainercompletedComponent implements OnInit {
   }
 
   get_list = function() {
-    this.http.get("https://localhost:44343/api/Admin/completedcourselist/"+this.mentorId).subscribe(
+    this.http.get("https://localhost:44343/api/Admin/courselist/"+this.mentorId).subscribe(
       (result : any[]) => {
         this.courses = result;
         console.log(result)

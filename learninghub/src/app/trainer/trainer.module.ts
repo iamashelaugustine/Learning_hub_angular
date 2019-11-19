@@ -6,11 +6,14 @@ import { TrainerpageComponent } from './trainerpage/trainerpage.component';
 import { TrainercompletedComponent } from './trainercompleted/trainercompleted.component';
 import { TrainercurrentComponent } from './trainercurrent/trainercurrent.component';
 import { TrainereditComponent } from './traineredit/traineredit.component';
+import { TrainertechlistComponent } from './trainertechlist/trainertechlist.component';
+import { TraineraddcourseComponent } from './traineraddcourse/traineraddcourse.component';
+import { TrainercourselistComponent } from './trainercourselist/trainercourselist.component';
 
 
 
 @NgModule({
-  declarations: [TrainersigninComponent, TrainersignupComponent, TrainerpageComponent, TrainercompletedComponent, TrainercurrentComponent, TrainereditComponent],
+  declarations: [TrainersigninComponent, TrainersignupComponent, TrainerpageComponent, TrainercompletedComponent, TrainercurrentComponent, TrainereditComponent, TrainertechlistComponent, TraineraddcourseComponent, TrainercourselistComponent],
   imports: [
     CommonModule
   ]

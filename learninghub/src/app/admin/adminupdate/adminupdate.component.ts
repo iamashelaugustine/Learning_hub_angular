@@ -10,9 +10,9 @@ import { HttpClient, HttpHeaders } from '@angular/common/http'
 export class AdminupdateComponent implements OnInit {
 
     
-    TechnologyName:string
-    Commission:String    
-    Id:String
+    technologyName:string
+    commission:String    
+    Id:number
     message:string
     constructor(private route: ActivatedRoute, private http: HttpClient,
       private router: Router) { 
@@ -20,18 +20,18 @@ export class AdminupdateComponent implements OnInit {
   
     ngOnInit() {
           this.route.params.subscribe(params => {
-            this.Id = params['Id'];
+            this.Id =  parseInt(this.route.snapshot.paramMap.get('id'));
             console.log(this.Id);
           });
   
       this.http.get("https://localhost:44343/api/Admin/technology/"+this.Id).subscribe(
         (result) => {
-          this.TechnologyName = result['TechnologyName'];
-          this.Commission = result['Commission'];          
+          this.technologyName = result['technologyName'];
+          this.commission = result['commission'];          
            //this.error_message = "Deleted"
           // this.users = [];
-          console.log('testing')
-          console.log(result)
+          //console.log('testing')
+          //console.log(result)
           // console.log(this.course_name)
           // console.log(this.start_date)
           // console.log(this.trainer_name)
@@ -45,9 +45,14 @@ export class AdminupdateComponent implements OnInit {
   
     }
   
-    submit_form_data(formdata){
-      console.log("TechnologyName : " + this.TechnologyName);
-      console.log("Commission : " + this.Commission);      
+    submit_form_data(formdata){               
+      formdata.id = this.Id;  
+      console.log("id : " + this.Id);      
+      console.log("technologyName : " + this.technologyName);
+      console.log("commission : " + this.commission);
+
+      console.log(formdata);
+      
         
     
       let headers = new HttpHeaders({'Content-Type': 'application/json'});
@@ -58,23 +63,59 @@ export class AdminupdateComponent implements OnInit {
           console.log(result)
           this.message = "Congratulations, succesfully updated !"
           alert(this.message)
+          this.router.navigate(['/adminedit'])
         },
-        (error) => {
+        (error) => {          
           console.log(error)
           this.message = "Error : Backend is running? or any other error";
           alert(this.message)
         }
       )
     }
+ }
+
+
   
-  }
 
 
 
 
 
 
-// import { Component, OnInit } from '@angular/core';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // import { Component, OnInit } from '@angular/core';
 // import { HttpHeaders, HttpClient } from '@angular/common/http';
 // import { ActivatedRoute, Router } from '@angular/router';
 

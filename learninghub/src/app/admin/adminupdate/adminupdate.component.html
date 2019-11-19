@@ -15,15 +15,15 @@
                                                       <div class="input-group-prepend">
                                                               <span class="input-group-text"><i class="fa fa-user"></i></span>
                                                       </div>
-                                                      <input type="text" class="form-control" [(ngModel)]="TechnologyName" name="TechnologyName" #technology_name2="ngModel" required placeholder="Enter Technology Name">
+                                                      <input type="text" class="form-control" [(ngModel)]="technologyName" name="technologyName" #technology_name2="ngModel" required placeholder="Enter Technology Name">
                                                       </div>
   
                                                       <div class="input-group form-group">
                                                           <div class="input-group-prepend">
                                                                   <span class="input-group-text"><i class="fa fa-user"></i></span>
                                                           </div>
-                                                          <input type="text" class="form-control" [(ngModel)]="Commission" name="Commission" #commissione2="ngModel" required placeholder="Enter New Commission">
-                                                          </div>
+                                                          <input type="text" class="form-control" [(ngModel)]="commission" name="commission" #commissione2="ngModel" required placeholder="Enter New Commission">
+                                                      </div>
   
                                                           
       
@@ -39,7 +39,6 @@
                                               <div class="form-group">
                                                       <button [disabled]="!form1.form.valid" class="btn float-right btn-warning">Update Technology</button>      
                                               </div>
-  
                                               
                                       </form>
                               </div>
