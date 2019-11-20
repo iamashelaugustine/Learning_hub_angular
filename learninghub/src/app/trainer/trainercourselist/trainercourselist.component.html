@@ -17,8 +17,8 @@
             <tr *ngFor="let course of courses">
               <td>{{course.technologyName}}</td>              
               <td>{{course.commission}}</td>                            
-              <td>{{course.startDate}}</td>
-              <td>{{course.endDate}}</td>
+              <td>{{course.startDate | date:'yyyy-MM-dd'}}</td>
+              <td>{{course.endDate | date:'yyyy-MM-dd'}}</td>
               <td>{{course.courseFee}}</td>              
               <!-- <td [routerLink]="['../traineraddcourse', technology.id]"><a title="Add Course"><i class="fa fa-plus-square"></i></a></td>               -->
             </tr>

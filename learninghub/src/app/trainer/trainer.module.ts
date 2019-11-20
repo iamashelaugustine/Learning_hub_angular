@@ -9,11 +9,12 @@ import { TrainereditComponent } from './traineredit/traineredit.component';
 import { TrainertechlistComponent } from './trainertechlist/trainertechlist.component';
 import { TraineraddcourseComponent } from './traineraddcourse/traineraddcourse.component';
 import { TrainercourselistComponent } from './trainercourselist/trainercourselist.component';
+import { TrainereditprofileComponent } from './trainereditprofile/trainereditprofile.component';
 
 
 
 @NgModule({
-  declarations: [TrainersigninComponent, TrainersignupComponent, TrainerpageComponent, TrainercompletedComponent, TrainercurrentComponent, TrainereditComponent, TrainertechlistComponent, TraineraddcourseComponent, TrainercourselistComponent],
+  declarations: [TrainersigninComponent, TrainersignupComponent, TrainerpageComponent, TrainercompletedComponent, TrainercurrentComponent, TrainereditComponent, TrainertechlistComponent, TraineraddcourseComponent, TrainercourselistComponent, TrainereditprofileComponent],
   imports: [
     CommonModule
   ]

@@ -3,10 +3,10 @@ import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-courses',
-  templateUrl: './courses.component.html',
-  styleUrls: ['./courses.component.css']
+  templateUrl: './usercourses.component.html',
+  styleUrls: ['./usercourses.component.css']
 })
-export class CoursesComponent implements OnInit {
+export class UsercoursesComponent implements OnInit {
 
   constructor(private http: HttpClient) { }
   error_message='';

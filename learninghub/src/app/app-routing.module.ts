@@ -27,6 +27,9 @@ import { AddtechnologyComponent } from './admin/addtechnology/addtechnology.comp
 import { TrainertechlistComponent } from './trainer/trainertechlist/trainertechlist.component';
 import { TrainercourselistComponent } from './trainer/trainercourselist/trainercourselist.component';
 import { TraineraddcourseComponent } from './trainer/traineraddcourse/traineraddcourse.component';
+import { TrainereditprofileComponent } from './trainer/trainereditprofile/trainereditprofile.component';
+import { UserpaymentComponent } from './user/userpayment/userpayment.component';
+import { UsercoursesComponent } from './user/usercourses/usercourses.component';
 
 
 
@@ -56,7 +59,10 @@ const routes: Routes = [
 {path:'trainertechlist',component:TrainertechlistComponent},
 {path:'trainercourselist',component:TrainercourselistComponent},
 {path:'traineraddcourse/:id',component:TraineraddcourseComponent, pathMatch:'full'},
-{path:'traineredit/:id',component:TrainereditComponent,pathMatch:'full'}
+{path:'traineredit/:id',component:TrainereditComponent,pathMatch:'full'},
+{path:'trainereditprofile',component:TrainereditprofileComponent},
+{path:'userpayment',component:UserpaymentComponent},
+{path:'usercourses',component:UsercoursesComponent}
 
 ];
 

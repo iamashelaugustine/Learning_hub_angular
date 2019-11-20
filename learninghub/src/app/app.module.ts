@@ -32,6 +32,9 @@ import { AddtechnologyComponent } from './admin/addtechnology/addtechnology.comp
 import { TrainertechlistComponent } from './trainer/trainertechlist/trainertechlist.component';
 import { TrainercourselistComponent } from './trainer/trainercourselist/trainercourselist.component';
 import { TraineraddcourseComponent } from './trainer/traineraddcourse/traineraddcourse.component';
+import { TrainereditprofileComponent } from './trainer/trainereditprofile/trainereditprofile.component';
+import { UserpaymentComponent } from './user/userpayment/userpayment.component';
+import { UsercoursesComponent } from './user/usercourses/usercourses.component';
 
 @NgModule({
   declarations: [
@@ -62,7 +65,10 @@ TrainercurrentComponent,
 TrainereditComponent,
 TrainertechlistComponent,
 TrainercourselistComponent,
-TraineraddcourseComponent
+TrainereditprofileComponent,
+TraineraddcourseComponent,
+UsercoursesComponent,
+UserpaymentComponent
  ],
   imports: [
     BrowserModule,

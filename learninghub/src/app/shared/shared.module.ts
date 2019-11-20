@@ -5,11 +5,12 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { IndexComponent } from './index/index.component';
 import { CoursesComponent } from './courses/courses.component';
+import { CoursemodalComponent } from './coursemodal/coursemodal.component';
 
 
 
 @NgModule({
-  declarations: [HomeComponent, NavbarComponent, AboutusComponent, IndexComponent, CoursesComponent],
+  declarations: [HomeComponent, NavbarComponent, AboutusComponent, IndexComponent, CoursesComponent, CoursemodalComponent],
   imports: [
     CommonModule
   ]
