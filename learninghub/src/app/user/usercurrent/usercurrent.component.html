@@ -1,45 +1,29 @@
 <div class="image">
-        <div class="container" style="padding-top: 10%" >
-            <div class="media border p-3" style="border-radius: 1rem; background: rgba(0,0,0,0.7)">
-        
-                <div class="media-body"  style="color: white">
-                    <div class="row">
-                    <h6 class="col-md-2" style="padding-top: 15px"><strong>HTML</strong></h6>
-                    <span class="col-md-2"></span>
-                        <h6 style="padding-top: 15px">Completion Date: 03 July 2019</h6>
-                        <span class="col-md-3"></span>
-                        <h6 style="padding-top: 15px"><strong style="color: goldenrod">Payment: </strong>Successful</h6>
-                </div>
-            </div>
-            </div>
-        
-            <br>
-            <div class="media border p-3" style="border-radius: 1rem; background: rgba(0,0,0,0.7)">
-        
-                    <div class="media-body"  style="color: white">
-                        <div class="row">
-                        <h6 class="col-md-2" style="padding-top: 15px"><strong>Java</strong></h6>
-                        <span class="col-md-2"></span>
-                            <h6 style="padding-top: 15px">Completion Date: 15 July 2019</h6>
-                            <span class="col-md-3"></span>
-                            <h6 style="padding-top: 15px"><strong style="color: goldenrod">Payment: </strong>Successful</h6>
-                    </div>
-                </div>
-                </div>
-        
-                <br>
-                <div class="media border p-3" style="border-radius: 1rem; background: rgba(0,0,0,0.7)">
-        
-                        <div class="media-body"  style="color: white">
-                            <div class="row">
-                            <h6 class="col-md-2" style="padding-top: 15px"><strong>Angular</strong></h6>
-                            <span class="col-md-2"></span>
-                                <h6 style="padding-top: 15px">Completion Date: 24 July 2019</h6>
-                                <span class="col-md-3"></span>
-                                <h6 style="padding-top: 15px"><strong style="color: goldenrod">Payment: </strong>Successful</h6>
-                        </div>
-                    </div>
-                    </div>
-        
+
+    <div class="form" style="text-align: center; padding-top: 5%; color: white">
+    
+        <h2><strong style="color: black">MY COURSE LIST</strong></h2><br>
+        <div class="table-responsive" style="width: 100%;">
+          <table class="table table-striped table-bordered table-hover" style="width: 100%; color: white; background: rgba(0,0,0,0.7)">
+           
+            <tr style="color: goldenrod">
+              <th>CourseName</th>                                                 
+              <th>StartDate</th>
+              <th>EndDate</th>
+              <th>CourseFee</th>
+              
+            </tr>
+            <tr *ngFor="let course of courses">
+              <td>{{course.technologyName}}</td>                                                     
+              <td>{{course.startDate | date:'yyyy-MM-dd'}}</td>
+              <td>{{course.endDate | date:'yyyy-MM-dd'}}</td>
+              <td>{{course.courseFee}}</td>              
+              <!-- <td [routerLink]="['../traineraddcourse', technology.id]"><a title="Add Course"><i class="fa fa-plus-square"></i></a></td>               -->
+            </tr>
+          </table>          
+            
+        <div>
+          <p class="red-text">{{error_message}}</p>
         </div>
-        </div>
+      </div>
+    </div>

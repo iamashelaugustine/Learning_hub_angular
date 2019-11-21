@@ -41,9 +41,7 @@ export class TrainercourselistComponent implements OnInit {
         console.log(error)
       }
     )
-
-
-  }
+}
 
   get_list = function() {
     this.http.get("https://localhost:44343/api/Admin/courselist/"+this.mentorId).subscribe(

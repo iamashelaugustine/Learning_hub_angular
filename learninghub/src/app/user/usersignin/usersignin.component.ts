@@ -41,6 +41,7 @@ this.http.post("https://localhost:44335/api/account/login", loginform,
         } 
         else {// we will get the JWT token from REST API / Server then we have to store in the Frontend
           localStorage.setItem('token', result);
+          localStorage.setItem('usermail', loginform.email_id);
           this._router.navigate(['userpage'])
           //this.error_message = ""
           //this.error_message = result

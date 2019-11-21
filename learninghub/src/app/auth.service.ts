@@ -21,6 +21,7 @@ logoutUser() {
   localStorage.removeItem('token')
   localStorage.removeItem('email')
   localStorage.removeItem('mentormail')
+  localStorage.removeItem('usermail')
   this._router.navigate(['/home'])
 }
 getToken() {

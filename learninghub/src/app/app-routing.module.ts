@@ -30,6 +30,7 @@ import { TraineraddcourseComponent } from './trainer/traineraddcourse/traineradd
 import { TrainereditprofileComponent } from './trainer/trainereditprofile/trainereditprofile.component';
 import { UserpaymentComponent } from './user/userpayment/userpayment.component';
 import { UsercoursesComponent } from './user/usercourses/usercourses.component';
+import { TrainerinfoComponent } from './shared/trainerinfo/trainerinfo.component';
 
 
 
@@ -62,7 +63,8 @@ const routes: Routes = [
 {path:'traineredit/:id',component:TrainereditComponent,pathMatch:'full'},
 {path:'trainereditprofile',component:TrainereditprofileComponent},
 {path:'userpayment',component:UserpaymentComponent},
-{path:'usercourses',component:UsercoursesComponent}
+{path:'usercourses',component:UsercoursesComponent},
+{path:'trainerinfo',component:TrainerinfoComponent}
 
 ];
 
