@@ -79,7 +79,7 @@ export class TraineraddcourseComponent implements OnInit {
           console.log(result)
           this.message = "Congratulations, course succesfully added !"
           alert(this.message)          
-          this.router.navigate(['/trainertechlist'])
+          this.router.navigate(['/trainerpage'])
         },
         (error) => {          
           console.log(error)

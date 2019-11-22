@@ -36,6 +36,8 @@ import { TrainereditprofileComponent } from './trainer/trainereditprofile/traine
 import { UserpaymentComponent } from './user/userpayment/userpayment.component';
 import { UsercoursesComponent } from './user/usercourses/usercourses.component';
 import { TrainerinfoComponent } from './shared/trainerinfo/trainerinfo.component';
+import { PaymentlistComponent } from './user/paymentlist/paymentlist.component';
+
 
 @NgModule({
   declarations: [
@@ -70,7 +72,8 @@ TrainereditprofileComponent,
 TraineraddcourseComponent,
 UsercoursesComponent,
 UserpaymentComponent,
-TrainerinfoComponent,  
+TrainerinfoComponent,
+PaymentlistComponent
  ],
   imports: [
     BrowserModule,

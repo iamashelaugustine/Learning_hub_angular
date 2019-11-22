@@ -31,6 +31,8 @@ import { TrainereditprofileComponent } from './trainer/trainereditprofile/traine
 import { UserpaymentComponent } from './user/userpayment/userpayment.component';
 import { UsercoursesComponent } from './user/usercourses/usercourses.component';
 import { TrainerinfoComponent } from './shared/trainerinfo/trainerinfo.component';
+import { PaymentlistComponent } from './user/paymentlist/paymentlist.component';
+
 
 
 
@@ -64,7 +66,8 @@ const routes: Routes = [
 {path:'trainereditprofile',component:TrainereditprofileComponent},
 {path:'userpayment',component:UserpaymentComponent},
 {path:'usercourses',component:UsercoursesComponent},
-{path:'trainerinfo',component:TrainerinfoComponent}
+{path:'trainerinfo',component:TrainerinfoComponent},
+{path:'paymentlist',component:PaymentlistComponent}
 
 ];
 

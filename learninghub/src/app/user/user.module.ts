@@ -7,11 +7,13 @@ import { UsercompletedComponent } from './usercompleted/usercompleted.component'
 import { UsercurrentComponent } from './usercurrent/usercurrent.component';
 import { UserpaymentComponent } from './userpayment/userpayment.component';
 import { UsercoursesComponent } from './usercourses/usercourses.component';
+import { PaymentlistComponent } from './paymentlist/paymentlist.component';
+
 
 
 
 @NgModule({
-  declarations: [UsersigninComponent, UsersignupComponent, UserpageComponent, UsercompletedComponent, UsercurrentComponent, UserpaymentComponent, UsercoursesComponent],
+  declarations: [UsersigninComponent, UsersignupComponent, UserpageComponent, UsercompletedComponent, UsercurrentComponent, UserpaymentComponent, UsercoursesComponent, PaymentlistComponent],
   imports: [
     CommonModule
   ]
